@@ -1,6 +1,9 @@
-set solib-absolute-prefix /home/mamk/ssd/workcode/BrowserShell/platform/android/obj/local/armeabi
-set solib-search-path /home/mamk/ssd/workcode/BrowserShell/platform/android/obj/local/armeabi
+#set solib-absolute-prefix /home/mamk/ssd/workcode/BrowserShell/platform/android/obj/local/armeabi
+#set solib-search-path /home/mamk/ssd/workcode/BrowserShell/platform/android/obj/local/armeabi:/home/mamk/ssd/u3player/sdk-android/RockPlayerSDK/obj/local/armeabi:/home/mamk/ssd/u3player/ffmpeg/build-ffmpeg/android/armv7_neon/debug/
+set solib-search-path /home/mamk/ssd/u3player/OUT/SYMBOL:/home/mamk/ssd/workcode/BrowserShell/platform/android/obj/local/armeabi:/home/mamk/gdb/huawei/
+set pagination off
 handle SIGHUP nostop pass noprint
+handle SIG34 nostop noprint pass
 define gobt  
   set logging file .gdb.btt  
   set logging overwrite on  
